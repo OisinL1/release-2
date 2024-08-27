@@ -1,0 +1,77 @@
+<div class="columns is-multiline">
+  <div class="column is-one-fifth">
+    <div class="card has-background-black has-text-white">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-6 has-text-white">{{station.title}}</p>
+            <p class="subtitle is-7 has-text-white">Lat: {{station.latitude}}, Lon: {{station.longitude}}</p>
+          </div>
+          <div class="media-right">
+            <img src="https://img.icons8.com/ios-filled/50/1CA085/marker.png" alt="Location Icon" width="30" height="30" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-one-fifth">
+    <div class="card has-background-black has-text-white">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-6 has-text-white">Weather</p>
+            <p class="subtitle is-7 has-text-white">{{weather}}</p>
+          </div>
+          <div class="media-right">
+            <img src="https://openweathermap.org/img/wn/{{iconCode}}@2x.png" alt="Weather Icon" width="30" height="30" />   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-one-fifth">
+    <div class="card has-background-black has-text-white">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-6 has-text-white">Temperature</p>
+            <p class="subtitle is-7 has-text-white">{{minTempReport.temp}}°C - {{maxTempReport.temp}}°C</p>
+          </div>
+          <div class="media-right">
+            <img src="https://img.icons8.com/ios-filled/50/1CA085/thermometer.png" alt="Temp Icon" width="30" height="30" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-one-fifith">
+    <div class="card has-background-black has-text-white">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-6 has-text-white">Wind - {{latestReport.wind_direction}}</p>
+            <p class="subtitle is-7 has-text-white">{{minWindSpeedReport.wind_speed}} - {{maxWindSpeedReport.wind_speed}} km/h</p>
+          </div>
+          <div class="media-right">
+            <img src="https://img.icons8.com/ios-filled/50/1CA085/wind.png" alt="Wind Icon" width="30" height="30" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-one-fifth">
+    <div class="card has-background-black has-text-white">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-6 has-text-white">Pressure</p>
+            <p class="subtitle is-7 has-text-white">{{minPressureReport.pressure}} - {{maxPressureReport.pressure}} mbar</p>
+          </div>
+          <div class="media-right">
+            <img src="https://img.icons8.com/ios-filled/50/1CA085/barometer.png" alt="Weather Icon" width="30" height="30" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

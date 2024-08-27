@@ -1,0 +1,14 @@
+{{> menu}}
+
+<section class="section">
+  <div class="title">
+    {{station.title}}
+  </div>
+
+  {{#if hasReports}}
+    {{> summary}}
+  {{/if}}
+
+  {{> list-reports}}
+  {{> add-report}}
+</section>
